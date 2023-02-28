@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header, .content, .footer{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.container{
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../media/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.header{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header img{
+    width: 40px;
+}
+
+.header .logo{
+    font-size: 28px;
+    font-weight: 600;
+    color: #02a6d8;
+}
+
+.menu{
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.menu .menu-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.menu .menu-list .menu-list__item{
+    margin: 2px 0;
+}
+
+.menu .menu-list .menu-list__item.btn{
+    padding: 10px 10px;
+    background: #02a6d8;
+    border-radius: 7px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 3px 7px #02a6d8;
+}
+
+.content{
+    position: relative;
+    text-align: center;
+    
+}
+
+.slideButtom{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 7px #02a6d8);
+    -webkit-filter: drop-shadow(3px 3px 7px #02a6d8);
+}
+
+.prevSlide{
+    left: 1rem;
+}
+
+.nextSlide{
+    right: 1rem;
+}
+
+.content .content__claim{
+    color: #02a6d8;
+    font-size: 40px;
+}
+
+.content .content__subclaim{
+    font-size: 20px;
+}
+
+.content .book-appointment{
+    position: absolute;
+    padding: 10px 10px;
+    background: #02a6d8;
+    border-radius: 7px;
+    text-align: center;
+    margin: 0 0 0 -70px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 3px 7px #02a6d8;
+}
+
+.footer-wrapper{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer-widget .footer__widget__title{
+    color: #02a6d8;
+    font-size: 24px;
+}
+
+.footer-widget .footer__widget__text{
+    font-size: 16px;
+}
+
+@media (min-width: 640px){
+
+    .header{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu .menu-list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .menu .menu-list .menu-list__item a:hover{
+        color: #02a6d8;
+    }
+
+    .menu .menu-list .menu-list__item{
+        margin: 0 0.5rem;
+    }
+
+    .menu .menu-list .menu-list__item.btn:hover{
+        background: #0180a7;
+    }
+
+    .menu .menu-list .menu-list__ittem.btn a:hover{
+        color: white;
+    }
+
+    .slideButtom{
+        font-size: 2.5rem;
+    }
+    
+    .prevSlide{
+        left: 2rem;
+    }
+    
+    .nextSlide{
+        right: 2rem;
+    }
+
+    .content .content__claim{
+        font-size: 60px;
+    }
+    
+    .content .content__subclaim{
+        font-size: 30px;
+    }
+
+    .content .book-appointment:hover{
+        background: #0180a7;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .footer-widget .footer__widget__title{
+        font-size: 30px;
+    }
+    
+    .footer-widget .footer__widget__text{
+        font-size: 20px;
+    }
+}
